@@ -1,4 +1,4 @@
-#kafka,\u6307\u5B9A\u6D88\u606Fkey\u548C\u6D88\u606F\u4F53\u7684\u7F16\u89E3\u7801\u65B9\u5F0F
+#kafka,指定消息key和消息体的编解码方式
 spring:
   kafka:
     bootstrap-servers: 127.0.0.1:9092
