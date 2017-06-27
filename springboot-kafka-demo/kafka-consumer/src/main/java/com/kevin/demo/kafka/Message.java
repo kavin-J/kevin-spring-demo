@@ -10,6 +10,7 @@ import java.util.Date;
  * @create 2017-06-23 下午 5:05
  **/
 public class Message {
+
     private BigDecimal id;
     private String name;
     private String home;
