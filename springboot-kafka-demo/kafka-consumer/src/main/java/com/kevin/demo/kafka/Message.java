@@ -12,7 +12,9 @@ import java.util.Date;
 public class Message {
 
     private BigDecimal id;
+    
     private String name;
+
     private String home;
 
     private Date sendTime;
