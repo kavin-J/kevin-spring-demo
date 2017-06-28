@@ -1,4 +1,4 @@
-#kafka,指定消息key和消息体的编解码方式
+#kafka,指定消息key和消息体的编解码方式 tttt
 spring:
   kafka:
     bootstrap-servers: 127.0.0.1:9092
