@@ -13,7 +13,7 @@
 	<packaging>pom</packaging>
 
 	<name>springboot-kafka-demo</name>
-	<description>Demo project for Spring Boot kafka</description>
+	<description>Demo project for Spring Boot kafka yy</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
