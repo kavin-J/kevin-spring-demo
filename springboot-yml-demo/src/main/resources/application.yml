@@ -1,0 +1,19 @@
+terminal:
+  #map类型
+  latestVersionMap[0]: 1250
+  latestVersionMap[1]: 021
+  latestVersionMap[2]: 006780
+  latestVersionMap[3]: 1072
+  #单一属性
+  name: jhy
+  age: 18
+  isSuccess: false
+  #list属性
+  list[0]: 0
+  list[1]: 1
+  list[2]: 2
+  #[]即是key
+  cmdMap[1]: 1
+  cmdMap[2]: 2
+  cmdMap[3]: 3
+  cmdMap[4]: 4
