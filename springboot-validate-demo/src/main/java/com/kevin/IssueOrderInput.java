@@ -1,5 +1,6 @@
 package com.kevin;
 
+import com.kevin.annotation.InArray;
 import org.hibernate.validator.constraints.Length;
 
 import javax.validation.constraints.Max;
@@ -35,7 +36,7 @@ public class IssueOrderInput implements java.io.Serializable {
     @Max(value = 999999, message = "授权码最大值 999999")
     private Integer authCode;
 
-    //@Pattern(regexp = "/^(0|1)$/")
+    @InArray(range = {1, 2, 3})
     private Integer flag;
 
     private String appId;
