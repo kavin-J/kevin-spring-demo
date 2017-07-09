@@ -33,15 +33,17 @@ public class TestValidate {
         input.setOrderId(1234567l);
         input.setRfid("21235682");
         input.setVin("2");
-        input.setStartTime("2009-10");
+        input.setStartTime("2017-10-18 12:22:09");
+        input.setFlag(6);
         Set<ConstraintViolation<IssueOrderInput>> constraintViolations =
                 validator.validate(input);
 
-        assertEquals(1, constraintViolations.size());
-        assertEquals(
-                "格式匹配不正确(yyyy-MM-dd HH:mm:ss)",
-                constraintViolations.iterator().next().getMessage()
-        );
+        assertEquals(0, constraintViolations.size());
+        System.err.println(constraintViolations.iterator().next().getMessage());
+//        assertEquals(
+//                "格式匹配不正确(yyyy-MM-dd HH:mm:ss)",
+//                constraintViolations.iterator().next().getMessage()
+//        );
     }
 
     @Test
