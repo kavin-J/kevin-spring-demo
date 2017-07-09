@@ -9,7 +9,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
 /**
- * @author jianghaiyang
+ * @author Jkevin
  * @create 2017-06-30
  **/
 public class IssueOrderInput implements java.io.Serializable {
