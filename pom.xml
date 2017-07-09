@@ -12,6 +12,7 @@
         <module>springboot-kafka-demo</module>
         <module>springboot-yml-demo</module>
         <module>springboot-validate-demo</module>
+        <module>springboot-mybatis-demo</module>
 
     </modules>
 
