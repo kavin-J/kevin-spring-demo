@@ -1,4 +1,4 @@
-package com.kevin.annotation;
+package com.kevin.validate.annotation;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
@@ -10,7 +10,7 @@ import java.util.Arrays;
  * @author jianghaiyang
  * @create 2017-07-07
  **/
-public class InArrayDef implements ConstraintValidator<InArray, Integer> {
+public class InArrayDef implements ConstraintValidator<InArray, Object> {
 
     private int[] range;
 
@@ -18,18 +18,13 @@ public class InArrayDef implements ConstraintValidator<InArray, Integer> {
         this.range = constraintAnnotation.range();
     }
 
-    public boolean isValid(Integer value, ConstraintValidatorContext constraintValidatorContext) {
-        System.err.println("value:" + value);
-        int index = Arrays.binarySearch(range, value);
+    public boolean isValid(Object value, ConstraintValidatorContext constraintValidatorContext) {
+        int index = Arrays.binarySearch(range, Integer.decode(value.toString()));
         if (value == null) {
-            System.out.println("value:null");
             return false;
         } else if (index < 0) {
-            System.out.println("index:-1");
             return false;
         } else {
-            System.out.println("index:" + index);
-            System.err.println("range:" + Arrays.toString(range));
             return true;
         }
     }

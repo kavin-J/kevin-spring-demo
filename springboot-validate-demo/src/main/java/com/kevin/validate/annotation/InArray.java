@@ -1,4 +1,4 @@
-package com.kevin.annotation;
+package com.kevin.validate.annotation;
 
 
 import javax.validation.Constraint;

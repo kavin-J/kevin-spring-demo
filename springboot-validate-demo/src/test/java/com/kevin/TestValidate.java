@@ -1,5 +1,6 @@
 package com.kevin;
 
+import com.kevin.validate.bean.IssueOrderInput;
 import org.junit.BeforeClass;
 import org.junit.Test;
 

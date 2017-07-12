@@ -1,6 +1,6 @@
-package com.kevin;
+package com.kevin.validate.bean;
 
-import com.kevin.annotation.InArray;
+import com.kevin.validate.annotation.InArray;
 import org.hibernate.validator.constraints.Length;
 
 import javax.validation.constraints.Max;
