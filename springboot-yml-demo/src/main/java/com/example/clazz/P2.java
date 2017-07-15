@@ -10,6 +10,7 @@ public class P2 {
     Long id;
     Long sid;
     String name;
+    String date;
 
     public Long getId() {
         return id;
@@ -39,6 +40,21 @@ public class P2 {
         this.id = id;
         this.sid = sid;
         this.name = name;
+    }
+
+    public P2(Long id, Long sid, String name, String date) {
+        this.id = id;
+        this.sid = sid;
+        this.name = name;
+        this.date = date;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 
     @Override

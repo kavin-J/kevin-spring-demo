@@ -1,5 +1,7 @@
 package com.example.clazz;
 
+import java.util.Date;
+
 /**
  * 111
  *
@@ -9,10 +11,25 @@ package com.example.clazz;
 public class P {
     String name;
     Long id;
+    String date;
 
     public P(String name, Long id) {
         this.name = name;
         this.id = id;
+    }
+
+    public P(String name, Long id, String date) {
+        this.name = name;
+        this.id = id;
+        this.date = date;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 
     public String getName() {
@@ -29,5 +46,14 @@ public class P {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "P{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", date=" + date +
+                '}';
     }
 }
