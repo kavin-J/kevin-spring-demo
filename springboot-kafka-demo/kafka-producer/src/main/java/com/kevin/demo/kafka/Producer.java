@@ -11,7 +11,7 @@ import java.util.Date;
 /**
  * 生产者
  *
- * @author jianghaiyang
+ * @author Jkevin
  * @create 2017-06-23 下午 5:11
  **/
 @Component
@@ -26,8 +26,11 @@ public class Producer {
         msg.setName("jhy");
         msg.setHome("宝嘉誉峰");
         msg.setSendTime(new Date());
-
+        msg.setAppId("app-1-apple-ios");
         kafkaTemplate.send("topic1", JSON.toJSONString(msg));
+        msg.setId(new BigDecimal("2"));
+        msg.setAppId("app-2-mi-android");
+        kafkaTemplate.send("topic2", JSON.toJSONString(msg));
     }
 
 }

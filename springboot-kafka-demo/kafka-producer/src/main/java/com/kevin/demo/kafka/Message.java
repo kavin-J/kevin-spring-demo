@@ -1,19 +1,25 @@
 package com.kevin.demo.kafka;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
  * 消息对象
  *
- * @author jianghaiyang
+ * @author Jkevin
  * @create 2017-06-23 下午 5:05
  **/
-public class Message implements Serializable{
+public class Message {
+
     private BigDecimal id;
+
+    private String appId;
+
     private String name;
+
     private String home;
+
     private Date sendTime;
 
     public BigDecimal getId() {
@@ -22,6 +28,14 @@ public class Message implements Serializable{
 
     public void setId(BigDecimal id) {
         this.id = id;
+    }
+
+    public String getAppId() {
+        return appId;
+    }
+
+    public void setAppId(String appId) {
+        this.appId = appId;
     }
 
     public String getName() {
@@ -52,9 +66,10 @@ public class Message implements Serializable{
     public String toString() {
         return "Message{" +
                 "id=" + id +
+                ", appId='" + appId + '\'' +
                 ", name='" + name + '\'' +
                 ", home='" + home + '\'' +
-                ", sendTime=" + sendTime +
+                ", sendTime=" + new SimpleDateFormat("yyyy-mm-dd hh:mm:ss").format(sendTime) +
                 '}';
     }
 }
