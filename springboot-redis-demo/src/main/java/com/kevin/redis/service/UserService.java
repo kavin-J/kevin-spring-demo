@@ -28,6 +28,13 @@ public class UserService {
         return map.get(user.getIdcard());
     }
 
+    @CachePut(key = "#idcard")
+    public User putUser(String idcard,String name) {
+        User user = map.get(idcard);
+        user.setName(name);
+        return  user;
+    }
+
 //    @CachePut(key = "#user.idcard")
 //    public void update(User user){
 //        System.err.println("调用了CachePut");
