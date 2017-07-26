@@ -13,3 +13,9 @@ spring:
   output:
     ansi:
       enabled: always
+management:
+  security:
+    enabled: false
+endpoints:
+  actuator:
+    sensitive: false
