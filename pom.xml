@@ -15,6 +15,7 @@
         <module>springboot-mybatis-demo</module>
         <module>springboot-redis-demo</module>
         <module>springboot-aop-demo</module>
+        <module>springboot-dubbox-demo</module>
 
     </modules>
 
