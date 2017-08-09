@@ -35,9 +35,4 @@ public class UserService {
         return  user;
     }
 
-//    @CachePut(key = "#user.idcard")
-//    public void update(User user){
-//        System.err.println("调用了CachePut");
-//        map.put(user.getIdcard(),user);
-//    }
 }
