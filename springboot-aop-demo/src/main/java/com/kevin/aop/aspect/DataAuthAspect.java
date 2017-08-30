@@ -74,7 +74,7 @@ public class DataAuthAspect {
         if (auth != null) {
             boolean validateResult = this.service.validateAuth(perm, auth.perms());
             if (!validateResult) {
-                throw new RuntimeException("数据权限校验失败!");
+                System.err.println("数据权限校验失败!");
             }
         }
 
