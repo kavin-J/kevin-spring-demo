@@ -24,19 +24,21 @@ public class UserController {
     public User findUser(User user) {
         return service.findUser(user);
     }
+
     @GetMapping("list")
     public List<Object> list(User user) {
         return testService.list(user);
     }
+
     @GetMapping("map")
     public Object map(User user) {
         return testService.map(user);
     }
 
     @PutMapping("users")
-    public User putUser(String idcard,String name) {
-        System.err.println("======="+idcard);
-        return service.putUser(idcard,name);
+    public User putUser(String idcard, String name) {
+        System.err.println("=======" + idcard);
+        return service.putUser(idcard, name);
     }
 
     @PostMapping("users:list")
@@ -47,5 +49,11 @@ public class UserController {
     @PostMapping("users:hash")
     public void insertHash(User user) {
         testService.insertMap(user);
+    }
+
+    @PostMapping("test")
+    public String test(String q) {
+        System.err.println(">>>>>>" + q);
+        return q;
     }
 }

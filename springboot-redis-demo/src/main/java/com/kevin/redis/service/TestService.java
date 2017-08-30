@@ -6,6 +6,7 @@ import org.springframework.data.redis.core.*;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Jkevin on 2017/8/9.
@@ -30,6 +31,7 @@ public class TestService {
     public void insertMap(User user) {
         HashOperations ops = redisTemplate.opsForHash();
         ops.put("users:hash", user.getIdcard(), user);
+        ops.getOperations().expire("1968959",10, TimeUnit.SECONDS);
     }
 
     public void insertList(User user) {

@@ -16,6 +16,9 @@
         <module>springboot-redis-demo</module>
         <module>springboot-aop-demo</module>
         <module>springboot-dubbox-demo</module>
+        <module>springboot-swagger-demo</module>
+        <module>springboot-react-demo</module>
+        <module>springboot-ons-demo</module>
 
     </modules>
 
