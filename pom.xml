@@ -19,6 +19,7 @@
         <module>springboot-swagger-demo</module>
         <module>springboot-react-demo</module>
         <module>springboot-ons-demo</module>
+        <module>springboot-common-demo</module>
 
     </modules>
 
